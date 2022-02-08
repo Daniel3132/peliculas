@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+
+}
+#logo{
+    float:left;
+    width: 90px;
+    height: 50px;
+}
+nav{
+    color:black;
+    background-color: rgb(245, 90, 51);
+    padding: 1vh 0;
+}
+body{
+    margin: 0%;
+    text-align: center;
+    color: white;
+    background-color: black;
+
+}
+.formRegistro{
+    border-radius: 20px;
+    line-height: 50px;
+    align-items: flex-end;
+    padding: 20px 0;
+    margin: 0% 30%;
+    background-color: rgb(32, 32, 32);
+}
+label{
+    text-align:left;
+    line-height: 20px;
+
+}
+.link{
+    margin: 0% 10%;
+}
+.containerSlider{
+    width: 55%;
+    max-width: 900px;
+    margin: 1% auto;
+    overflow:hidden;
+    position: relative;
+}
+.slider{
+    display: flex;
+    width: 900%;
+    margin-left: -100%;
+}
+.sliderS{
+    width:100%
+}
+.sliderImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btnL{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(240, 248, 255, 0.329);
+    top:50%;
+    transform: translateY(50%);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.555);
+    color: black;
+    left: 1rem;
+}
+.btnR{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(255, 255, 255, 0.555);
+    top:50%;
+    transform: translateY(50%);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    color: black;
+    right: 1rem;
+}
+/*ver imagen completa*/
+.movies img{
+    width: 100%;
+}
+/*hacer carta*/
+.movies{
+    width: 28%;
+    margin: 1rem;
+    background-color: var(--color1);
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/*ocultar info*/
+.overview{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.918);
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 400%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+    height: fit-content;
+    text-align:left;
+}
+.movies:hover .overview{
+    transform: translateY(0);
+}
+.search{
+    align-items: flex-start;
+}
+#formBuscar{
+    text-align: end;
+}
+#cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
